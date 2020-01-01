@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/item_steps_pic"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/item_steps_indicator"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/colorBlackLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/item_steps_pic"
+        app:layout_constraintStart_toStartOf="@+id/item_steps_pic"
+        app:layout_constraintTop_toBottomOf="@+id/item_steps_pic" />
+
+    <TextView
+        android:id="@+id/item_steps_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="17:19 - 12/08/1398"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/iransans_medium"
+        app:layout_constraintEnd_toStartOf="@+id/item_steps_pic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_steps_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ثبت نام بیمه گذار ویا نماینده آن"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/item_steps_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_steps_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
